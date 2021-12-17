@@ -3,17 +3,6 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 
 const Home: NextPage = () => {
-  const [state, setState] = useState('')
-  console.log('hey man')
-  console.log('hey girl')
-
-  useEffect(() => {
-    if(state === '') {
-    setState('initialized')
-    }
-    console.log({ state })
-  }, [])
-
   return (
     <div>
       <Head>
