@@ -1,9 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
 
 const Home: NextPage = () => {
-  console.log("hey man");
-  console.log("hey girl");
+  const [state, setState] = useState('')
+  console.log('hey man')
+  console.log('hey girl')
+
+  useEffect(() => {
+    if(state === '') {
+    setState('initialized')
+    }
+    console.log({ state })
+  }, [])
+
   return (
     <div>
       <Head>
