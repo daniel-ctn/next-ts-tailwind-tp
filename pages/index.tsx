@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 const Home: NextPage = () => {
   console.log("hey man");
+  console.log("hey girl");
   return (
     <div>
       <Head>
